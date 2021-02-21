@@ -1,4 +1,4 @@
-# Ping sequence_number time
+# task 1
 from socket import *
 import time
 
