@@ -17,9 +17,9 @@ while True:
     connectionSocket, addr = serverSocket.accept()  # Fill here
 
     try:
-        message = serverSocket.recv(1024)  # Fill
+        message = connectionSocket.recv(1024).decode()  # Fill
         filename = message.split()[1]
-        f = open(filename[1:])
+        f = open(filename[1:])  # Default use 'r' mode
         outputdata = f.read()  # Fill
 
         # Send one HTTP header line into socket
