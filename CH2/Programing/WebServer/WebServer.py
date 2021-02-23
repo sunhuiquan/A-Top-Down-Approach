@@ -24,7 +24,7 @@ while True:
 
         # Send one HTTP header line into socket
         #Fill in start
-        header = 'HTTP/1.1 200 OK\n\n'
+        header = 'HTTP/1.1 200 OK\nContent-Length: %d\n\n' % (len(outputdata))
         connectionSocket.send(header.encode())
         #Fill in end
 
@@ -32,11 +32,11 @@ while True:
         for i in range(0, len(outputdata)):
             connectionSocket.send(outputdata[i].encode())
         connectionSocket.close()
-    except IOError:
+    except IOError as e:
+        # print(e)
         # Send response message for file not found)
         header = 'HTTP/1.1 404 Not Found\n\n'
         connectionSocket.send(header.encode())  # Fill
-
-    # Close client socket
-    connectionSocket.close()  # Fill
+        # Close client socket
+        connectionSocket.close()  # Fill
 serverSocket.close()
