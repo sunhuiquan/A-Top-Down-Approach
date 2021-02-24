@@ -13,7 +13,6 @@ endmsg = "\r\n.\r\n"
 mailserver = 'smtp.qq.com'  # Fill 1
 
 # Create socket called clientSocket and establish a TCP connection with mailserver
-
 # Fill 2
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((mailserver, 25))
