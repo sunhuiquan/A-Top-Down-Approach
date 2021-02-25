@@ -7,12 +7,12 @@
 #### 作业 1：Web服务器
 
 
-* 解答：[作业1-Web服务器-解答.md](SocketProgrammingAssignment/作业1-Web服务器/作业1-Web服务器-解答.md)
+* 解答：[作业1-Web服务器-解答.md](A-Top-Down-Approach/CH2/Programing)
 
 #### 作业 2：UDPping程序
 
-* 解答：[作业2-UDPping程序-解答.md](SocketProgrammingAssignment/作业2-UDPping程序/作业2-UDPping程序-解答.md)
+* 解答：[作业2-UDPping程序-解答.md](CH2/Programing)
 
 #### 作业 3：邮件客户端
 
-* 解答：[作业3-邮件客户端-解答.md](SocketProgrammingAssignment/作业3-邮件客户端/作业3-邮件客户端-解答.md)
+* 解答：[作业3-邮件客户端-解答.md](CH2/Programing)
