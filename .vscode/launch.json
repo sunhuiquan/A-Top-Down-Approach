@@ -12,7 +12,8 @@
             "cwd": "${fileDirname}",
             // 解决相对路径问题，原来的VSC默认的相对路径起始在整个根工作区目录，
             // 现在改为当前目录
-            "console": "externalTerminal"
+            "console": "externalTerminal",
+            "args": ["8899"]
             // "console": "integratedTerminal"
         }
     ]
