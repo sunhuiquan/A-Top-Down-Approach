@@ -6,5 +6,5 @@
 * [CH2 Web Server](CH2/Programing/WebServer) 这个简单，熟悉下api。
 * [CH2 UDPping](CH2/Programing/UDPping) 这个简单，熟悉下api。
 * [CH2 SMTP Client](CH2/Programing/SMTP) 网易邮箱自动成垃圾，我错了，我是垃圾，搞了半天心态，推荐用qq。
-* [CH2 Web Proxy](CH2/Programing/WebProxy) 因为做过CSAPP的proxy lab所以原理很简单，但是给的python<br>模板代码一堆坑，各种细节问题，尤其是自动发200 OK完全不考虑304 Not Modified，无语了。
+* [CH2 Web Proxy](CH2/Programing/WebProxy) 因为做过CSAPP的proxy lab所以原理很简单，但是给的python模板一堆坑，<br>各种细节问题，尤其是自动发200 OK完全不考虑304 Not Modified，无语了。
   
