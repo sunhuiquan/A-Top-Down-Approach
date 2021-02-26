@@ -1,4 +1,6 @@
-#coding:utf-8
+# Task 1 2021/2/26 9:20 SunHuiquan
+
+# coding:utf-8
 from socket import *
 import sys
 
@@ -23,7 +25,6 @@ while 1:
     print(message)
 
     # Extract the filename from the given message
-    print(message.split()[1])
     filename = message.split()[1].partition("//")[2]
     # print(filename)
     fileExist = "false"
@@ -32,14 +33,17 @@ while 1:
 
     try:
         # Check wether the file exist in the cache
-        f = open(filetouse[1:], "r")
+        f = open(filetouse[1:].replace('/', '_'), "r")
         outputdata = f.readlines()
         fileExist = "true"
         # ProxyServer finds a cache hit and generates a response message
-        tcpCliSock.send("HTTP/1.0 200 OK\r\n")
-        tcpCliSock.send("Content-Type:text/html\r\n")
+        if(outputdata[0].split()[1] != '304'):
+            tcpCliSock.send("HTTP/1.0 200 OK\r\n".encode())
+            tcpCliSock.send("Content-Type:text/html\r\n".encode())
         # Fill in start.
-        tcpCliSock.sendall(outputdata)
+        print(outputdata)
+        for s in outputdata:
+            tcpCliSock.send(s.encode())
         # Fill in end.
         print('Read from cache')
     # Error handling for file not found in cache
@@ -56,22 +60,18 @@ while 1:
                 c.connect((resourceServerName, 80))
                 c.sendall(message.encode())
                 buff = c.recv(4096)
+                print(buff)
                 tcpCliSock.sendall(buff)
-                # Fill in end.  
-                           
-                # # Create a temporary file on this socket and ask port 80
-                # fileobj = c.makefile('r', 0)
-                # fileobj.write("GET "+"http://" + filename + " HTTP/1.0\n\n")
-                # # Read the response into buffer
-                # # Fill in start.
-                # # Fill in end.
+                # Fill in end.
 
                 # Create a new file in the cache for the requested file.
                 # Also send the response in the buffer to client socket and the corresponding file in the cache
-                fn = "./" + filename
+                fn = filename.replace('/', '_')
+                # print(fn)
                 # 文件名不能有/所以要换成别的字符比如_，记得查找的创建文件的时候调整一下文件名字符串
-                tmpFile = open(fn, "w")
+                tmpFile = open("./" + fn, "w")
                 # Fill in start.
+                print('------------'+str(len(buff)))
                 tmpFile.writelines(buff.decode().replace('\r\n', '\n'))
                 tmpFile.close()
                 # Fill in end.
