@@ -2,11 +2,10 @@
 
 from socket import *
 import ssl
-
-emailFrom = '1503028072@qq.com'
-emailTo = 'sunhuiquan@yeah.net'
-emailBase64 = 'MTUwMzAyODA3MkBxcS5jb20='
-passwordBase64 = 'd21sbWtyd3N3ZGNkZ2FjaQ=='
+# emailFrom = 'qq number@qq.com'
+# emailTo = 'email to@yeah.net'
+# emailBase64 = 'email from base64'
+# passwordBase64 = 'password base64'
 
 msg = "\r\n I love computer networks!"
 endmsg = "\r\n.\r\n"
