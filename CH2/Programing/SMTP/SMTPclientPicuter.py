@@ -3,10 +3,10 @@
 from socket import *
 import base64
 
-emailFrom = '1503028072@qq.com'
-emailTo = 'sunhuiquan@yeah.net'
-emailBase64 = 'MTUwMzAyODA3MkBxcS5jb20='
-passwordBase64 = 'd21sbWtyd3N3ZGNkZ2FjaQ=='
+# emailFrom = 'qq number@qq.com'
+# emailTo = 'email to@yeah.net'
+# emailBase64 = 'email from base64'
+# passwordBase64 = 'password base64'
 
 # Choose a mail server (e.g. Google mail server) and call it mailserver
 mailserver = 'smtp.qq.com'  # Fill 1
