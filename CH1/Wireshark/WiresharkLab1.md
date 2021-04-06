@@ -6,4 +6,4 @@ ps：
 2. 0.55s
 3. 我26.26.26.1 服务器128.119.245.12
 4. pdf截图
-![IMG](../IMG/printer.png)
+![IMG](./IMG/printer.png)
