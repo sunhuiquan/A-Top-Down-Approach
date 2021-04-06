@@ -11,6 +11,8 @@
 * [CH2 Web Proxy](CH2/Programing/WebProxy)<br>因为做过CSAPP的proxy lab所以原理很简单，但是给的python模板一堆坑，各种细节问题，尤其是自动发200 OK完全不考虑304 Not Modified，无语了。另外强调下要用给的网站测试，因为这是特意用的http 80端口，现在常用网站基本都是https 443端口了，哭哭，愣了半天才发觉端口不对。（可选都写在一起了，不过没有找到测试post网站）
  
  ### 【二】Wireshark Experiment: 
-* [CH1 Experiment1](CH1/Wireshark/WiresharkLab1.md)<br>超简单，完全是wireshark入门教程。
+* [CH1 Intro](CH1/Wireshark/WiresharkLab1.md)<br>超简单，完全是wireshark入门教程。
+* [CH2 HTTP](CH2/Wireshark/WiresharkLab2.md)<br>挺有意思的，也不难，不过花的时间也要接近1h。。
+* [CH2 DNS](CH2/Wireshark/WiresharkLab3.md)<br>有意思，另外韩国网站整吐了，🤮，开了vpn还是nslookup超时。开了vpn用wireshark测以太网2，关了测wlan(我的笔记本)，才发现我IP跑到美国去了。。不过不影响。学了nslookup和ipconfig确实有用。
  
  ### 另外我的习题已经鸽了这么久，马上开始填坑。。。
