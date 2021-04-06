@@ -1,4 +1,5 @@
-感想:吐槽一下我的wireshark一开始经常出现TCP Previous segment not captured的问题，就是wireshark没能捕获到全部tcp段，多试几次就好了。另外看到1460这个TCP segment的length的时候感到真的有一种整洁的美的感觉。。。
+ps:
+1. 吐槽一下我的wireshark一开始经常出现TCP Previous segment not captured的问题，就是wireshark没能捕获到全部tcp段，多试几次就好了。另外看到1460这个TCP segment的length的时候感到真的有一种整洁的美的感觉。。。
 ---
 Answer:
 1. 均使用HTTP/1.1
