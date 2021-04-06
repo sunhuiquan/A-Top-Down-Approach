@@ -2,9 +2,9 @@ ps:
 1. 前面要连外网所以我的IP跑到美国那里去了，关了vpn发现要捕获的网络都改变了，无语，给我整蒙了好一会，学到了ipconfig(尤其是选项flushdns清除刷新dns缓存，displaydns列出dns，all全部)和nslookup两个指令
 2. 有些地方还超时，吐了🤮，韩国网站，开了vpn也是，不过韩国好像也有墙，不知道是中国墙还是韩国墙的问题，还是网站本身的问题。
 ---
-1. 
+1. <br>
 ![IMG](../IMG/1.png)
-2. 
+2. <br>
 ![IMG](../IMG/2.png)
 3. 失败了不知道为啥，理论上没问题啊。。正常nslookup -type=MX yahoo.com没问题
 ![IMG](../IMG/3.png)
