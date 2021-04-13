@@ -23,3 +23,4 @@
 * [CH8 SSL](CH8/Wireshark/Wiresharklab12.md)<br>稍微看了看复习。
 
 习题解析可以看：https://github.com/moranzcw/Computer-Networking-A-Top-Down-Approach-NOTES/blob/master/Resource/Solutions-7th-Edition.docx
+不过说实话不大建议全做，把重要的那几章好好做就好了，其他的看看了解下，这本书不全是给cs的看的，一大块是通信专业的内容，这些我们只需要了解即可。还是多看看面经重要。
