@@ -20,6 +20,6 @@
 * [CH4 NAT](CH4/Wireshark/WiresharkLab9.md)<br>快乐复习。
 * [CH5 ARP](CH5/Wireshark/Wiresharklab10.md)<br>快乐复习。
 * CH6 802.11 因为我是CS的，不是搞通信的，书上简略介绍一下对我已经完全够用，就不浪费时间了。
-* [CH8 SSL](CH8/Wireshark/WiresharkLab12.md)<br>稍微看了看复习。
+* [CH8 SSL](CH8/Wireshark/Wiresharklab12.md)<br>稍微看了看复习。
 
 习题解析可以看：https://github.com/moranzcw/Computer-Networking-A-Top-Down-Approach-NOTES/blob/master/Resource/Solutions-7th-Edition.docx
